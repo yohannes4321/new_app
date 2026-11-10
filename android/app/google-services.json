@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "900754833696",
+    "project_id": "m4n-project",
+    "storage_bucket": "m4n-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900754833696:android:a34e66c5915f1bd7835745",
+        "android_client_info": {
+          "package_name": "com.example.church_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900754833696-b3ajemhm54vk2fjf3jrelnqjuvl632tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAncUa3smM3aFXQd908mh6hkQ9N0zKymrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900754833696-b3ajemhm54vk2fjf3jrelnqjuvl632tb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "900754833696-t49k9vjchusni0ekhiir8opsdqh0cal7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.churchApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

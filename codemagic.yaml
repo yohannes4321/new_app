@@ -1,0 +1,25 @@
+workflows:
+  mission-for-nation-release:
+    name: Mission For Nation release
+    environment:
+      flutter: stable
+      groups:
+        - app_store_connect
+        - android_signing
+      vars:
+        API_BASE_URL: "https://YOUR_CPANEL_API_HOST/api"
+        BUNDLE_ID: "com.example.churchApp"
+    scripts:
+      - name: Get packages
+        script: flutter pub get
+      - name: Analyze and test
+        script: |
+          flutter analyze
+          flutter test
+      - name: Build Android App Bundle
+        script: flutter build appbundle --release --dart-define=API_BASE_URL=$API_BASE_URL
+      - name: Build signed iOS IPA
+        script: flutter build ipa --release --dart-define=API_BASE_URL=$API_BASE_URL
+    artifacts:
+      - build/app/outputs/bundle/release/*.aab
+      - build/ios/ipa/*.ipa
